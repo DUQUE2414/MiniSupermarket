@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniSupermarket - La Esquina</title>
+    <link rel="icon" type="image/png" href="imgs/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="imgs/logo.png" alt="Logo Minisupermercado La Esquina">
+        </div>
+        <h1>MINISUPERMERCADO LA ESQUINA</h1>
+        <nav class="navbar">
+            <ul class="navbar-menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Ofertas</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Categorías <span class="arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Abarrotes</a></li>
+                        <li><a href="#">Bebidas</a></li>
+                        <li><a href="#">Lácteos y Huevos</a></li>
+                        <li><a href="#">Limpieza del Hogar</a></li>
+                        <li><a href="#">Frutas y Verduras</a></li>
+                        <li><a href="#">Cuidado Personal</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+
+            <div class="user-actions">
+                <button class="button">Registro</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>¡Mercado fresco al mejor precio!</h2>
+                <p class="hero-subtitle">Envíos a domicilio en menos de 30 minutos</p>
+                <button class="button">Ver ofertas</button>
+            </div>
+
+            <div class="banner-hero">
+                <img src="imgs/banner.png" alt="Banner de ofertas">
+            </div>
+        </section>
+
+        <section class="categorias-grid">
+            <h2>Categorías Populares</h2>
+            <div class="categorias-container">
+                <div class="categoria-card">
+                    <img src="imgs/abarrotes.png" alt="Abarrotes">
+                    <h3>Abarrotes</h3>
+                </div>
+
+                <div class="categoria-card">
+                    <img src="imgs/bebidas.png" alt="Bebidas">
+                    <h3>Bebidas</h3>
+                </div>
+
+                <div class="categoria-card">
+                    <img src="imgs/lacteos.png" alt="Lácteos">
+                    <h3>Lácteos</h3>
+                </div>
+
+                <div class="categoria-card">
+                    <img src="imgs/limpieza.png" alt="Limpieza">
+                    <h3>Limpieza</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos" class="products">
+            <h2>Productos Destacados</h2>
+            <div class="productos-grid">
+                <article class="product-card">
+                    <span class="badge-discount">-10%</span>
+                    <img src="imgs/producto1.png" alt="Arroz de 1kg">
+                    <h3>Arroz Roa 1kg</h3>
+                    <p class="product-category">Abarrotes</p>
+                    <div class="product-price">
+                        <span class="current-price">$4.500</span>
+                        <span class="old-price">$5.000</span>
+                    </div>
+                    <button class="btn-add-cart">
+                        <i class="fa-solid fa-cart-plus"></i> Agregar
+                    </button>
+                </article>
+
+                <article class="product-card">
+                    <span class="badge-discount">-20%</span>
+                    <img src="imgs/producto2.png" alt="Duo de Gaseosas Postobon">
+                    <h3>Duo de Gaseosas Postobon</h3>
+                    <p class="product-category">Bebidas</p>
+                    <div class="product-price">
+                        <span class="current-price">$6.500</span>
+                        <span class="old-price">$8.000</span>
+                    </div>
+                    <button class="btn-add-cart">
+                        <i class="fa-solid fa-cart-plus"></i> Agregar
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="feature-box">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Envíos Rápidos</h3>
+                <p>Entregas en menos de 45 minutos.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Pago Seguro</h3>
+                <p>Efectivo o transferencia bancaria.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fa-solid fa-seedling"></i>
+                <h3>Productos Frescos</h3>
+                <p>Calidad garantizada todos los días.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+
+            <div class="footer-column footer-brand">
+                <div class="logo">
+                    <img src="imgs/logo.png" alt="Logo Minisupermercado La Esquina">
+                </div>
+                <p class="descripcion">
+                    Tu tienda de confianza cerca de casa, con los mejores precios y productos frescos todos los días.
+                </p>
+                <div class="footer-socials">
+                    <h4>Síguenos en Redes</h4>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/573001234567" target="_blank" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-column footer-contact">
+                <h4>Atención al Cliente</h4>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Calle 45 #12-34, Barrio La Esquina</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+573001234567">+57 300 123 4567</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://wa.me/573001234567" target="_blank">Pedir por WhatsApp</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:contacto@minisuperlaesquina.com">minisuperlaesquina@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Lunes a Sábado: 7:00 AM - 9:00 PM<br>Domingos: 8:00 AM - 6:00 PM</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>&copy; 2026 Minisupermercado La Esquina. Todos los derechos reservados.</p>
+                <p class="project-credit">Proyecto personal desarrollado para práctica web.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
