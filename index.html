@@ -17,20 +17,20 @@
 <body>
 
     <header>
-        <div class="container">
+        <div class="contenedor">
             <div class="logo">
                 <img src="imgs/logo.png" alt="Logo de Minisupermercado La Esquina">
             </div>
             <h1>MINISUPERMERCADO LA ESQUINA</h1>
         </div>
-        <nav class="navbar">
-            <ul class="navbar-menu">
+        <nav class="barra-navegacion">
+            <ul class="menu-navegacion">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Ofertas</a></li>
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Categorías <span class="arrow">▼</span></a>
-                    <ul class="dropdown-menu">
+                <li class="desplegable">
+                    <a href="#" class="boton-desplegable">Categorías <span class="flecha">▼</span></a>
+                    <ul class="menu-desplegable">
                         <li><a href="#">Abarrotes</a></li>
                         <li><a href="#">Bebidas</a></li>
                         <li><a href="#">Lácteos y Huevos</a></li>
@@ -42,22 +42,22 @@
                 <li><a href="#">Contactos</a></li>
             </ul>
 
-            <div class="user-actions">
-                <button class="button">Registro</button>
+            <div class="acciones-usuario">
+                <button class="boton-registro">Registro</button>
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
+        <section class="principal">
+            <div class="contenido-principal">
                 <h2>¡Mercado fresco al mejor precio!</h2>
-                <p class="hero-subtitle">Envíos a domicilio en menos de 30 minutos</p>
-                <button class="button">Ver ofertas</button>
+                <p class="subtitulo-principal">Envíos a domicilio en menos de 30 minutos</p>
+                <button class="boton-principal">Ver ofertas</button>
             </div>
 
-            <div class="banner-hero">
+            <div class="banner-principal">
                 <img src="imgs/banner.png" alt="Banner de ofertas">
             </div>
         </section>
@@ -87,51 +87,53 @@
             </div>
         </section>
 
-        <section id="productos" class="products">
+        <section class="productos-grid">
             <h2>Productos Destacados</h2>
-            <div class="productos-grid">
-                <article class="product-card">
-                    <span class="badge-discount">-10%</span>
-                    <img src="imgs/producto1.png" alt="Arroz de 1kg">
-                    <h3>Arroz Roa 1kg</h3>
-                    <p class="product-category">Abarrotes</p>
-                    <div class="product-price">
-                        <span class="current-price">$4.500</span>
-                        <span class="old-price">$5.000</span>
+
+            <div class="productos-container">
+                <!-- Producto con Oferta -->
+                <article class="producto-card">
+                    <span class="descuento">-20%</span>
+                    <img src="imgs/bebidas.png" alt="Aceite Vegetal 1L">
+                    <div class="producto-info">
+                        <span class="producto-categoria">Abarrotes</span>
+                        <h3>Aceite Vegetal 1L</h3>
+                        <div class="precios">
+                            <span class="precio-actual">$7.500</span>
+                            <span class="precio-anterior">$9.300</span>
+                        </div>
+                        <button class="btn-agregar">Agregar al carrito</button>
                     </div>
-                    <button class="btn-add-cart">
-                        <i class="fa-solid fa-cart-plus"></i> Agregar
-                    </button>
                 </article>
 
-                <article class="product-card">
-                    <span class="badge-discount">-20%</span>
-                    <img src="imgs/producto2.png" alt="Duo de Gaseosas Postobon">
-                    <h3>Duo de Gaseosas Postobon</h3>
-                    <p class="product-category">Bebidas</p>
-                    <div class="product-price">
-                        <span class="current-price">$6.500</span>
-                        <span class="old-price">$8.000</span>
+                <!-- Producto Normal -->
+                <article class="producto-card">
+                    <span class="descuento">-20%</span>
+                    <img src="imgs/lacteos.png" alt="Leche Entera 1L">
+                    <div class="producto-info">
+                        <span class="producto-categoria">Lácteos</span>
+                        <h3>Leche Entera 1L</h3>
+                        <div class="precios">
+                            <span class="precio-actual">$4.200</span>
+                        </div>
+                        <button class="btn-agregar">Agregar al carrito</button>
                     </div>
-                    <button class="btn-add-cart">
-                        <i class="fa-solid fa-cart-plus"></i> Agregar
-                    </button>
                 </article>
             </div>
         </section>
 
-        <section class="features-section">
-            <div class="feature-box">
+        <section class="seccion-beneficios">
+            <div class="caja-beneficio">
                 <i class="fa-solid fa-truck-fast"></i>
                 <h3>Envíos Rápidos</h3>
                 <p>Entregas en menos de 45 minutos.</p>
             </div>
-            <div class="feature-box">
+            <div class="caja-beneficio">
                 <i class="fa-solid fa-shield-halved"></i>
                 <h3>Pago Seguro</h3>
                 <p>Efectivo o transferencia bancaria.</p>
             </div>
-            <div class="feature-box">
+            <div class="caja-beneficio">
                 <i class="fa-solid fa-seedling"></i>
                 <h3>Productos Frescos</h3>
                 <p>Calidad garantizada todos los días.</p>
@@ -139,20 +141,19 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-container">
+    <footer class="pie-pagina">
+        <div class="pie-contenedor">
 
-
-            <div class="footer-column footer-brand">
+            <div class="pie-columna pie-marca">
                 <div class="logo">
                     <img src="imgs/logo.png" alt="Logo Minisupermercado La Esquina">
                 </div>
                 <p class="descripcion">
                     Tu tienda de confianza cerca de casa, con los mejores precios y productos frescos todos los días.
                 </p>
-                <div class="footer-socials">
+                <div class="pie-redes">
                     <h4>Síguenos en Redes</h4>
-                    <div class="social-icons">
+                    <div class="iconos-sociales">
                         <a href="https://facebook.com" target="_blank" aria-label="Facebook">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
@@ -169,9 +170,9 @@
                 </div>
             </div>
 
-            <div class="footer-column footer-contact">
+            <div class="pie-columna pie-contacto">
                 <h4>Atención al Cliente</h4>
-                <ul class="contact-info">
+                <ul class="info-contacto">
                     <li>
                         <i class="fa-solid fa-location-dot"></i>
                         <span>Calle 45 #12-34, Barrio La Esquina</span>
@@ -197,10 +198,10 @@
 
         </div>
 
-        <div class="footer-bottom">
-            <div class="copyright">
+        <div class="pie-inferior">
+            <div class="derechos-autor">
                 <p>&copy; 2026 Minisupermercado La Esquina. Todos los derechos reservados.</p>
-                <p class="project-credit">Proyecto personal desarrollado para práctica web.</p>
+                <p class="credito-proyecto">Proyecto personal desarrollado para práctica web.</p>
             </div>
         </div>
     </footer>
